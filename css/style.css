@@ -1,0 +1,475 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+background: #fff;
+font-family: sans-serif;
+box-sizing: border-box;
+}
+
+body {    
+	margin: 0 auto;
+	padding: 0;	
+    background-color: #fff;
+    color: #343a40;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.618;
+    overflow-x: hidden;
+}
+
+li {
+    list-style-type: none;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    color: #212529;    
+    font-weight: 600;
+    line-height: 1.618;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-weight: bold;
+}
+
+.menu {
+    display:flex;
+    margin: 10px 250px;
+    align-items: center;
+    justify-content: space-between;   
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 15.625rem;    
+}
+
+.q-cabecalho {
+    border-right: 1px solid rgba(0,0,0,.1);
+    color: #212529;
+    font-size: 13px;
+    font-weight: 800;
+    padding: 0 25px 0 0;
+    text-transform: uppercase;
+}
+    
+
+input[type=text] {
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+    background-color:aliceblue;
+    background-image: url('/img/searchicon.png');
+    background-position: 300px 10px; 
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 15px;
+    height: 30px;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.img-lupa {
+    width: 0.5rem;
+    height: 0.5rem;
+    cursor: pointer;
+}
+
+.btn-cadastro {
+    font-size: 15px;
+    border-radius: 5px;
+    height: 35px;
+    width: 155px;
+    background-color: #ff8800;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.banner {
+    background: rgb(233, 70, 5);
+    width:100%;
+    text-align: center;
+    color:#fff;
+    margin-top: 2rem;
+}
+
+.titulo-desc {
+    padding: 2rem;
+}
+
+.btn-banner {
+    background: #ffc800;
+    border:none;
+    border-radius: 2rem;
+    box-shadow: 0 10px 15px rgb(0 0 0 / 10%);    
+    font-weight:bolder;
+    font-size: 14px;
+    margin-bottom: 2rem;
+    height: 48px;
+    line-height: 17px;
+    min-width: 256px;
+    padding: 14px 20px;
+    text-transform: uppercase;
+    color: #212529;
+    cursor: pointer;
+}
+
+.btn-banner:hover {
+    min-width: 265px;  
+    opacity: 0.6;
+}
+
+.desconto {
+    border: 1px dashed #faca15;
+    border-radius: 5px;
+    width: 10rem;
+    height: 10rem;
+    color: #fff;  
+    background: rgba(208,56,1,.7);  
+    font-weight:bolder;
+    font-size: 18px;
+    line-height: 35px;  
+    position: relative;
+    display: grid;
+    position: relative;  
+    float: right;    
+    margin: -15rem 30rem 0 auto;
+}
+
+.servicos {
+    display: flex;
+    margin: 10px 250px;
+    justify-content: space-evenly;
+    align-items: center;  
+    
+}
+
+.servicos p {
+    justify-content: end;
+}
+
+.btn-assinatura {
+    background: #ee8523;
+    color:#fff;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;     
+    height: 2rem;    
+    align-items: center;
+}
+
+.titulo-objetivo, .txt-objetivo { 
+    align-items: center;
+    text-align: center;    
+}
+
+.titulo-objetivo {
+    margin-top: 2rem;
+}
+
+.txt-objetivo {
+    margin-bottom: 2rem;
+}
+
+.card {   
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 4px;
+    margin: 0 8px;
+    max-width: 220px;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    display: grid;    
+}
+
+.areas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.areas h3 {
+    font-size: 14px;  
+}
+
+.txt-areas {
+    text-align: center;
+    justify-content:center;
+}
+
+.concursos {    
+    border-top: 3px solid #ee8523;
+}
+
+.enem {    
+    border-top: 3px solid #ffb707;
+}
+
+.vestibular {
+    border-top: 3px solid #00b1ff;
+}
+
+.oab {
+    border-top: 3px solid #ff6b6b;
+}
+
+.militar {
+    border-top: 3px solid #23be87;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.metodos-estudos h2 {
+    color:#212529;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.metodos {
+    display:grid;
+    grid-template-columns: repeat(4, auto);    
+    justify-content:center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.icone-metodos {
+    width: 40px;
+    height: 40px;  
+    color: #fff;
+    border-radius: 50%;
+    background:2rem #ee8523;      
+}
+
+.txt-metodos {
+    margin-top: 2rem;;
+    align-items: center;
+    text-align: center;
+}
+
+.btn-metodologia, .btn-conc-abertos {
+    display: flex;
+    margin: 20px auto 0;
+    background: #35abfc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    height: 34px;
+    padding: 0 12px;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-metodologia:hover, 
+.btn-conc-abertos:hover {
+    opacity: 0.6;    
+}
+
+.list-conc {
+    align-items: center;
+    justify-content: center; 
+    display: flex;    
+}
+
+.card-conc {
+    border-top: 4px solid #23be87;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+}
+
+.concursos-abertos h2{
+    font-weight: 400 !important;
+    padding: 10px 0 20px;
+    margin-left: 30rem;   
+}
+
+.depoimentos {
+    width:100%;
+    margin: 0 1% 2rem 1%;    
+    display: flex;    
+    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;   
+    
+}
+
+.depoimentos p {
+    max-width: 180px;
+    max-height: 150px;    
+}   
+
+.aprovados h1 {
+    margin-left: 35%;
+    margin-top: 2rem;   
+    font-weight: 600;        
+}
+
+.link-historias {
+    margin-left: 60%;    
+    padding: 0;
+    color: #35abfc;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.link-historias:hover {
+    text-decoration:underline;
+}
+
+.btn-conquiste {
+    display: flex;
+    margin: 20px auto 0;
+    background: #35abfc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    height: 34px;
+    padding: 0 12px;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-conquiste:hover {
+    opacity: 0.6;
+}
+
+.conquista a {
+    margin-left: 40%;  
+    margin-top: 20rem;  
+    padding: 0;
+    color: #35abfc;   
+    text-decoration: none;
+}
+
+.conquista a:hover {
+    text-decoration: underline;
+}
+
+.icone-dicas {
+    width: 40px;
+    height: 40px;  
+    color: #fff;
+    border-radius: 50%;
+    background:2rem #ee8523; 
+    
+}
+
+.dicas {
+    display:grid;
+    grid-template-columns: repeat(4, auto);    
+    justify-content:center;
+    align-items: center;
+    margin: 8rem auto;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.titulo-noticia h2 {
+    justify-content:center;
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.noticias h3 {
+    display: inline-block;
+    text-align: left;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    margin-bottom: 3rem;
+    padding: 0;   
+    font-size: 1rem;
+    max-width: 10rem;
+    max-height: 10rem;
+    font-size: 14px;
+    color: #495057
+}
+
+.noticias h3:hover {
+    color:#00b1ff
+}
+.noticias {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20%;
+    padding-right: 20%;
+    color:#212529;
+    cursor: pointer;  
+}
+
+.img-noticias {
+    height:100px;
+    top: 55%;
+    width: 110px;
+    display:inline-block    
+}
+
+.mais-noticias a {
+    margin-left: 40%;   
+    padding: 0;
+    color: #35abfc;   
+    text-decoration: none;   
+}
+
+footer {
+    background-color: #495057; 
+    display: grid;  
+    grid-template-columns: repeat(3, auto);
+    margin-top: 4rem;
+}
+
+.footer-links h3 {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+
+
