@@ -1,4 +1,6 @@
 *{
+    margin: 0;
+    padding:0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
@@ -32,6 +34,14 @@ li {
     line-height: 1.618;
 }
 
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
 h2 {
     display: block;
     font-size: 1.5em;
@@ -41,6 +51,17 @@ h2 {
     margin-inline-end: 0;
     font-weight: bold;
 }
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 5rem;
+    position: relative;    
+}
+
+/*Menu-Cabeçalho*/
 
 .menu {
     display:flex;
@@ -81,13 +102,6 @@ input[type=text] {
     height: 30px;
 }
 
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
 .img-lupa {
     width: 0.5rem;
     height: 0.5rem;
@@ -105,6 +119,8 @@ input[type=text] {
     font-weight: bold;
     cursor: pointer;
 }
+
+/*Banner*/
 
 .banner {
     background: rgb(233, 70, 5);
@@ -157,13 +173,15 @@ input[type=text] {
     margin: -15rem 30rem 0 auto;
 }
 
+/*Serviços*/
+
 .servicos {
     display: flex;
     margin: 10px 250px;
     justify-content: space-evenly;
-    align-items: center;  
-    
+    align-items: center;
 }
+
 
 .servicos p {
     justify-content: end;
@@ -178,7 +196,10 @@ input[type=text] {
     padding: 0.5rem;     
     height: 2rem;    
     align-items: center;
+    cursor: pointer;
 }
+
+/*Objetivo*/
 
 .titulo-objetivo, .txt-objetivo { 
     align-items: center;
@@ -196,7 +217,7 @@ input[type=text] {
 .card {   
     border: 1px solid rgba(0,0,0,.1);
     border-radius: 4px;
-    margin: 0 8px;
+    margin: 1rem 8px;
     max-width: 220px;
     padding: 5px;
     text-align: center;
@@ -244,6 +265,8 @@ input[type=text] {
     cursor: pointer;
 }
 
+/*Métodos de estudos*/
+
 .metodos-estudos h2 {
     color:#212529;
     display: flex;
@@ -251,34 +274,51 @@ input[type=text] {
     align-items: center;
 }
 
-.metodos {
-    display:grid;
-    grid-template-columns: repeat(4, auto);    
-    justify-content:center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20%;
-    padding-right: 20%;
+.metodos p {
+    display: grid;
+    grid-template-columns: auto auto;    
+    margin-bottom: 3rem;
 }
 
-.icone-metodos {
-    width: 40px;
-    height: 40px;  
-    color: #fff;
-    border-radius: 50%;
-    background:2rem #ee8523;      
+
+.metodos {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    margin: 10px 350px;
+}
+
+.grid-icone {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    margin-right: 10px;
+    height: 150px;
+}
+
+.icone-metodos {   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: #f1681e;    
+    float: left;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 0px;
 }
 
 .txt-metodos {
-    margin-top: 2rem;;
+    margin-top: 3rem;;
     align-items: center;
     text-align: center;
 }
 
 .btn-metodologia, .btn-conc-abertos {
     display: flex;
-    margin: 20px auto 0;
+    margin: 2rem auto 5rem;
     background: #35abfc;
     color: #fff;
     border: none;
@@ -297,6 +337,8 @@ input[type=text] {
     opacity: 0.6;    
 }
 
+/*Concursos abertos*/
+
 .list-conc {
     align-items: center;
     justify-content: center; 
@@ -312,42 +354,51 @@ input[type=text] {
 
 .concursos-abertos h2{
     font-weight: 400 !important;
-    padding: 10px 0 20px;
+    padding: 2rem 0 0;
     margin-left: 30rem;   
 }
 
-.depoimentos {
-    width:100%;
-    margin: 0 1% 2rem 1%;    
-    display: flex;    
-    flex-direction: column;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;   
+/*Depoimentos*/
+
+.aprovados{
+    display: flex;
+    justify-content: space-between;
+    margin: auto 350px;
     
-}
-
-.depoimentos p {
-    max-width: 180px;
-    max-height: 150px;    
-}   
-
-.aprovados h1 {
-    margin-left: 35%;
-    margin-top: 2rem;   
-    font-weight: 600;        
-}
+}    
 
 .link-historias {
-    margin-left: 60%;    
-    padding: 0;
-    color: #35abfc;
-    margin-right: 10px;
-    text-decoration: none;
+    color: #35abfc;    
 }
 
 .link-historias:hover {
     text-decoration:underline;
+}
+
+.cards-aprovados {
+    margin: 0px 350px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.cards-depoimentos {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #eaf4f7;
+    margin: 15px 15px 0px 0px;
+    border-radius: 5px;
+    height: 180px;
+}
+
+.txt-aprovados {
+    font-size: 12px;
+}
+
+.img-dep {
+    display: flex;
+    align-items: center;
+    margin: 0px 20px;
 }
 
 .btn-conquiste {
@@ -382,24 +433,70 @@ input[type=text] {
     text-decoration: underline;
 }
 
-.icone-dicas {
-    width: 40px;
-    height: 40px;  
-    color: #fff;
-    border-radius: 50%;
-    background:2rem #ee8523; 
-    
+/*Guias*/
+
+.guias {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;     
+    color:#212529;
 }
 
-.dicas {
-    display:grid;
-    grid-template-columns: repeat(4, auto);    
-    justify-content:center;
-    align-items: center;
-    margin: 8rem auto;
-    padding-left: 20%;
-    padding-right: 20%;
+.guias p {
+    display: inline-block;
+    text-align: left;    
+    margin-right: 2rem;
+    margin-bottom: 3rem;
+    padding: 0;
+    font-size: 1rem;
+    max-width: 10rem;
+    max-height: 10rem;
+    font-size: 14px;
+    color: #495057;
 }
+
+.guias h3 {
+    display: inline-block;    
+    margin-top: 0;  
+    font-size: 1rem;
+    max-width: 10rem;
+    max-height: 10rem;
+    font-size: 14px;    
+}
+
+.grid-icone {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    margin-right: 10px;
+    height: 200px;
+}
+
+.icone-guias {   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: #f1681e;
+    float: left;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 0px;
+}
+
+.txt-guias {
+    margin-top: 3rem;;
+    align-items: center;
+    text-align: center;
+}
+
+/*Noticias*/
 
 .titulo-noticia h2 {
     justify-content:center;
@@ -444,12 +541,15 @@ input[type=text] {
     display:inline-block    
 }
 
-.mais-noticias a {
-    margin-left: 40%;   
+.mais-noticias a {    
     padding: 0;
     color: #35abfc;   
-    text-decoration: none;   
+    text-decoration: none;  
+    display: flex; 
+    justify-content:center;
 }
+
+/*Rodapé*/
 
 footer {
     background-color: #495057; 
