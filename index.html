@@ -5,71 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qconcursos</title>
+    <link rel="icon" type="image/x-icon" href="./img/imagens/qc-afe3db90abed2de7f6ed.svg">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
     
     <!--Cabeçalho-->
     <header>
-        <div class="container">
-            <img src="./img/imagens/qc-afe3db90abed2de7f6ed.svg" alt="">
-            <img src="./img/imagens/logo.svg" alt="">
+        <div class="header">
+            <div class="header-bar-esquerda">   
+                <div class="img-qconsursos">                   
+                    <img src="./img/imagens/qc-afe3db90abed2de7f6ed.svg" alt="">
+                    <img class="img-nome-qconcursos"src="./img/imagens/logo.svg" alt="">
+                </div>           
+                <span class="menu-bar-class">
+                    <img style="width:25px;height:25px" src="img/icones/menu-ico.png" alt="">
+                    "Menu"
+                </span>
 
-            <a href="#">Menu</a>
-            <form>
-                <input type="search-input" placeholder="Buscar por disciplinas, concursos e provas" aria-label="Search">
-                <button type="submit">
-                    <img class="img-lupa" src="./img/imagens/lupa.jpg" alt="">
-                </button>                
+            <form class="form-class">
+                <input type="text" placeholder="Busca por disciplinas, concursos e provas">
+                <button type="submit" class="btn-pesquisar"><img class="img-lupa" src="./img/imagens/lupa.jpg"></button>
             </form>
-            <div class="menu">
-                <a href="#">Central de Ajuda</a>
-                <a href="#">Assinar</a>
-                <a href="#">Entrar</a>
+        </div>
+            <div class="header-bar-direita">
+                <a class="menu-bar-class" href="#">Central de Ajuda</a>
+                <a class="menu-bar-class" href="#">Assinar</a>
+                <a class="menu-bar-class" href="#">Entrar</a>
                 <button class="btn-cadastro">Cadastre-se Grátis</button>
-            </div>
+            </div>            
         </div>
 
     <!--Barra de navegação-->
     <nav>
         <div class="cabecalho">
-            <div class="q-cabecalho">concursos</div>
-            <ul class="">
-                <li>
-                    <a href="">Início</a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="">Concursos</a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="">Aulas</a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="">Questões</a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="">Notícias</a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="">Disciplinas</a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="">Mais Informações</a>
-                </li>
-            </ul>
-        </div>
+            <h4 class="h4-cabecalho">concursos</h4>
+            <a href="#">Início</a>
+            <div class="menu-dropdown">
+                <button class="dropdown-btn">Concursos</button>
+                <div class="conteudo-dropdown">
+                    <a href="#">Todos os concursos</a>
+                    <a href="#">Provas</a>
+                    <a href="#">Guia de estudos</a>
+                    <a href="#">Bancas</a>
+                    <a href="#">Instituições</a>
+                    <a href="#">Cargos</a>
+                    <a href="#">Raio X</a>
+                    <a href="#">Simuladão com Ranking</a>
+                </div>   
+            </div>
+            <div class="menu-dropdown">
+                <button class="dropdown-btn">Aulas</button>
+                <div class="conteudo-dropdown">
+                    <a href="#">Aulas em vídeo</a>
+                    <a href="#">Aulas de texto</a>
+                </div>
+            </div>
+                <div>
+                    <a class="" href="#">Questões</a>
+                </div>
+                <div>
+                    <a class="" href="#">Notícias</a>
+                </div>
+                <div>
+                    <a class="" href="#">Disciplinas</a>
+                </div>
+                <div class="dropdown-menu">
+                    <button class="dropdown-btn">Mais informações</button>
+                        <div class="dropdown-content">
+                            <a href="#">Área de atuação</a>
+                            <a href="#">Área de formação</a>
+                        </div>
+                </div>
+            </div>       
     </nav>
     </header>
     
@@ -81,12 +89,6 @@
                 <h2>O MAIOR DESCONTO DO ANO para quem chegar primeiro.</h2>
             </div>        
             <div class="countdown-progress-bar"></div>
-            <div>
-                <b>12500</b>
-                <p>unidades</p>
-                <b>0</b>
-                <p>unidades</p>
-            </div>
             <div>
                 <button class="btn-banner">APROVEITAR AGORA</button>
             </div>       
