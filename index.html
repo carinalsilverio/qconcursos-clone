@@ -38,47 +38,39 @@
 
     <!--Barra de navegação-->
     <nav>
-        <div class="cabecalho">
-            <h4 class="h4-cabecalho">concursos</h4>
-            <a href="#">Início</a>
-            <div class="menu-dropdown">
-                <button class="dropdown-btn">Concursos</button>
-                <div class="conteudo-dropdown">
-                    <a href="#">Todos os concursos</a>
-                    <a href="#">Provas</a>
-                    <a href="#">Guia de estudos</a>
-                    <a href="#">Bancas</a>
-                    <a href="#">Instituições</a>
-                    <a href="#">Cargos</a>
-                    <a href="#">Raio X</a>
-                    <a href="#">Simuladão com Ranking</a>
-                </div>   
-            </div>
-            <div class="menu-dropdown">
-                <button class="dropdown-btn">Aulas</button>
-                <div class="conteudo-dropdown">
-                    <a href="#">Aulas em vídeo</a>
-                    <a href="#">Aulas de texto</a>
-                </div>
-            </div>
-                <div>
-                    <a class="" href="#">Questões</a>
-                </div>
-                <div>
-                    <a class="" href="#">Notícias</a>
-                </div>
-                <div>
-                    <a class="" href="#">Disciplinas</a>
-                </div>
-                <div class="dropdown-menu">
-                    <button class="dropdown-btn">Mais informações</button>
-                        <div class="dropdown-content">
-                            <a href="#">Área de atuação</a>
-                            <a href="#">Área de formação</a>
-                        </div>
-                </div>
-            </div>       
-    </nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#">Concursos</a>
+                <ul>
+                    <li><a href="#">Todos os concursos</a></li>
+                    <li><a href="#">Provas</a></li>
+                    <li><a href="#">Guia de estudos</a></li>
+                    <li><a href="#">Bancas</a></li>
+                    <li><a href="#">Instituições</a></li>
+                    <li><a href="#">Cargos</a></li>
+                    <li><a href="#">Raio X</a></li>
+                    <li><a href="#">Simuladão com Ranking</a></li>
+                </ul>
+                </li>
+                
+                <li><a href="#">Aulas</a>
+                <ul>
+                    <li><a href="#">Aulas em vídeo</a></li>
+                    <li><a href="#">Aulas de texto</a></li>                        
+                </ul>
+                </li>
+                <li><a href="#">Questões</a></li>
+                        <li><a href="#">Notícias</a></li>
+                        <li><a href="#">Disciplinas</a></li>                        
+                    <li><a href="#">Mais Informações</a>
+                <ul>
+                    <li><a href="#">Área de atuação</a></li>
+                    <li><a href="#">Área de formação</a></li>                        
+                </ul>
+                </li>
+            </ul>            
+            
+        </nav>
     </header>
     
     <!--Banner-->
@@ -414,132 +406,55 @@
     <!--Rodapé-->
     <footer>
         <div class="footer-links">
-            <h3>Qconcursos.com</h3>       
-            <div>
-                <ul>
-                    <li>
-                        <a href="">Início</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <a href="">Concursos</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <a href="">Provas</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <a href="">Disciplinas</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <a href="">Questões</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <a href="">Aulas em vídeo</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <a href="">Aulas em texto</a>
-                    </li>
-                </ul>
+            <div class= "link-group">
+                <div class="link-list">
+                    <h3>Qconcursos.com</h3>
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Concursos</a></li>
+                        <li><a href="#">Provas</a></li>
+                        <li><a href="#">Disciplinas</a></li>
+                        <li><a href="#">Questões</a></li>
+                        <li><a href="#">Aulas em vídeo</a></li>
+                        <li><a href="#">Aulas em texto</a></li>
+                    </ul>
+                </div>
+                <div class="link-list">
+                    <h3>Apêndice</h3>
+                    <ul>
+                        <li><a href="#">Bancas Organizadoras</a></li>
+                        <li><a href="#">Cargos Públicos</a></li>
+                        <li><a href="#">Instituições Públicas</a></li>
+                        <li><a href="#">Áreas de Formação</a></li>
+                        <li><a href="#">Áreas de Atuação</a></li>                        
+                    </ul>
+                </div>
+                <div class="link-list">
+                    <h3>Páginas Úteis</h3>
+                    <ul>
+                        <li><a href="#">Nossos Professores</a></li>
+                        <li><a href="#">Meu Primeiro Concurso</a></li>
+                        <li><a href="#">Como usar o Qconcursos</a></li>
+                        <li><a href="#">Últimas Notícias</a></li>
+                        <li><a href="#">Mapa de Concursos</a></li>                        
+                    </ul>
+                </div>            
             </div>
         </div>
+        <div class="secao-termos">
+        <div class="termos">
+            <ul>
+                <li><a class="links-termos" href="#">Assinar |</a></li>
+                <li><a class="links-termos" href="#">Black Friday |</a></li>
+                <li><a class="links-termos" href="#">Central de Ajuda |</a></li>
+                <li><a class="links-termos" href="#">Termos de Uso |</a></li>
+                <li><a class="links-termos" href="#">Política de Privacidade |</a></li>    
+                <li><a class="links-termos" href="#">Sobre o Qconcursos.com |</a></li>                
+                <li><a class="links-termos" href="#">Trabalhe Conosco</a></li>
+            </ul>
+        </div>
 
-        <div class="footer-links">
-            <h3>Apêndice</h3>      
-            <div>
-                <ul>
-                    <li>
-                        <a href="">Bancas Organizadoras</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <a href="">Cargos Públicos</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <a href="">Instituições Públicas</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <a href="">Áreas de Formação</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <a href="">Áreas de Atuação</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-links">
-                <h3>Páginas Úteis</h3>           
-                <div>
-                    <ul>
-                        <li>
-                            <a href="">Nossos Professores</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li>
-                            <a href="">Meu Primeiro Concurso</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li>
-                            <a href="">Como usar o Qconcursos</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li>
-                            <a href="">Últimas Notícias</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li>
-                            <a href="">Mapa de Concursos</a>
-                        </li>
-                    </ul>
-                </div>
+
         </div>
     </footer>
 </body>

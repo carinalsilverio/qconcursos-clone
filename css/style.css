@@ -170,38 +170,51 @@ input[type=text] {
 }
 
 /*Barra de Navegação*/
-.cabecalho {
-    display: flex;
-    margin: 10px 250px;
-    align-items: center;
-    justify-content: space-between;
+
+nav {
+    margin-bottom: 4rem;
+    margin-left: 25rem;
+}
+nav ul {
+    float: left;   
+    border-top: 1px solid rgba(0,0,0,.1);
 }
 
-.h4-cabecalho {
-    color: #ff8800;
-}
-
-.menu-dropdown {
+nav ul li {
+    float: left;
+    list-style: none;
     position: relative;
-    display: inline-block;
 }
 
-.dropdown-btn {
-    background-color: white;
-    color: #000;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+nav ul li a {
+    display: block;
+    font-size: 14px;
+    padding: 22px 115px 22px 14px;
+    text-decoration: none;    
 }
 
-.conteudo-dropdown {
-    display: none;
+nav ul li ul {
+    display:none;
+    position: relative;   
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
-    z-index: 1;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    width: 180px;
+    border-radius: 4px;    
+}
+
+nav ul li ul li a {
+    padding: 12px 14px;
+    background:#fff;    
+    margin-top: -15px;
+    border-radius: 0 0 5px 5px;   
 }
 
 
@@ -638,8 +651,19 @@ input[type=text] {
 
 footer {
     background-color: #495057; 
+    margin-top: 4rem;
+    
+}
+
+.link-group {
     display: grid;  
     grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(1, auto);  
+    margin-left: 20%;
+    
+}
+
+.link-list {
     margin-top: 4rem;
 }
 
@@ -647,13 +671,31 @@ footer {
     color: #fff;
     text-decoration: none;
     font-size: 13px;
-    text-transform: uppercase;
+    text-transform: uppercase; 
+    margin-bottom: 0.5rem;   
 }
 
 .footer-links a {
     color: #fff;
     text-decoration: none;
     font-size: 13px;
+}
+
+/*Termos*/
+.secao-termos .termos li{
+    color: #fff;  
+    display: inline-block;
+    padding: 15px 0;
+    text-align: left;     
+}
+
+.termos li:first-child a {
+    padding-left: 0;
+    margin-left: 23.8rem;
+}
+
+.termos li a {    
+    margin-right: 0.2rem;
 }
 
 
