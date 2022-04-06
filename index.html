@@ -7,11 +7,13 @@
     <title>Qconcursos</title>
     <link rel="icon" type="image/x-icon" href="./img/imagens/qc-afe3db90abed2de7f6ed.svg">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/responsivo.css">
+
 </head>
 <body>
     
     <!--Cabeçalho-->
-    <header>
+    <header class="container">
         <div class="header">
             <div class="header-bar-esquerda">   
                 <div class="img-qconsursos">                   
@@ -22,6 +24,11 @@
                     <img style="width:25px;height:25px" src="img/icones/menu-ico.png" alt="">
                     "Menu"
                 </span>
+                <div class="menu-responsivo">
+                    <div class="linha1"></div>
+                    <div class="linha2"></div>
+                    <div class="linha3"></div>
+                </div>
 
             <form class="form-class">
                 <input type="text" placeholder="Busca por disciplinas, concursos e provas">
@@ -38,7 +45,7 @@
 
     <!--Barra de navegação-->
     <nav>
-            <ul>
+            <ul class="lista-nav">
                 <li><a href="index.html">Início</a></li>
                 <li><a href="#">Concursos</a>
                 <ul>
@@ -92,7 +99,7 @@
     </section>   
 
     <!--Serviços-->
-    <section>
+    <section class="container">
         <div class="servicos">
             <div>
                 <h2>+de 1 milhão</h2>
@@ -111,7 +118,7 @@
     </section>
 
     <!--Objetivos-->
-    <section>
+    <section class="container">
         <div>
             <h2 class="titulo-objetivo">Qual o seu objetivo?</h2>
             <p class="txt-objetivo">Somos uma plataforma completa para você conquistar a sua aprovação</p>
@@ -146,7 +153,7 @@
     </section>
 
     <!--Métodos de estudos-->
-    <section>
+    <section class="container">
         <div class="metodos-estudos container">
             <h2>Como estudar no Qconcursos</h2>
         </div>
@@ -231,7 +238,7 @@
     </section>
 
     <!--Concursos Abertos-->
-    <section>
+    <section class="container">
         <div class="concursos-abertos">
             <h2>Principais concursos públicos abertos</h2>
         </div>  
@@ -281,7 +288,7 @@
     </section>
 
     <!--Aprovados-->
-    <section>
+    <section class="container">
         <div>
             <div class="aprovados">
                 <div>
@@ -333,7 +340,7 @@
     </section>
 
     <!--Guias de Estudos-->
-    <section>
+    <section class="container">
         <div class="guias">
             <div>
                 <div class="grid-icones">
@@ -375,7 +382,7 @@
     </section>
 
     <!--Notícias-->
-    <section>
+    <section class="container">
         <div class="titulo-noticia">
             <h2>Notícias</h2>
         </div>
@@ -453,9 +460,8 @@
                 <li><a class="links-termos" href="#">Trabalhe Conosco</a></li>
             </ul>
         </div>
-
-
         </div>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>

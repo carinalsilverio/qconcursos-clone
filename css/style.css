@@ -21,7 +21,7 @@ body {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.618;
-    overflow-x: hidden;
+    overflow-x: hidden;      
 }
 
 li {
@@ -41,8 +41,8 @@ p {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
 }
 
 h2 {
@@ -56,20 +56,18 @@ h2 {
 }
 
 .container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    height: 5rem;
-    position: relative;    
+    margin: auto;
+	padding: 0;   
+    min-width: 18.75rem; 
+    max-width: 87.5rem;  
 }
 
 /*Cabeçalho*/
 .header {
     display: flex;
-    margin: 0px;
-    padding: 5px;
-    margin: 0px 260px;
+    margin: auto;
+    padding: 0.3125rem;    
+    width: 100%;
 }
 
 .header-bar-esquerda, .header-bar-direita {
@@ -83,7 +81,7 @@ h2 {
 }
 
 .header-bar-esquerda {
-    padding-right: 10px;
+    padding-right: 0.625rem;
 }
 
 .img-qconcursos {
@@ -92,10 +90,21 @@ h2 {
 }
 
 .img-nome-qconcursos {
-    width: 100px;
-    margin-left: 10px;
+    width: 6.25rem;
+    margin-left: 0.625rem;
 }
 
+.menu-responsivo {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-responsivo div {
+    width: 25px;
+    height: 1px;
+    background: #000;
+    margin: 8px;
+}
 
 .menu-bar-class {
     font-size: 14px;
@@ -115,7 +124,7 @@ input[type=text] {
     border-radius: 10px;
     font-size: 12px;
     background-color: rgb(250, 250, 250);
-    padding: 12px 0px 12px 10px;
+    padding: 0.75rem 0 0.75rem 0.625rem;
     height: 30px;
     -webkit-transition: 0s;
     transition: 0s;
@@ -129,8 +138,8 @@ input[type=text] {
 }
 
 .btn-pesquisar {
-    width: 40px;
-    height: 30px;   
+    width: 2.5rem;
+    height: 1.875rem;   
     background-color: rgb(250, 250, 250);
     text-align: center;
     border-radius: 0 5px 5px 0;
@@ -140,7 +149,7 @@ input[type=text] {
 }
 
 .header-bar-direita {
-    padding-left: 300px;
+    padding-left: 18.75rem;
     display: flex;
     justify-items: flex-end;
 }
@@ -156,8 +165,8 @@ input[type=text] {
 .btn-cadastro {
     font-size: 15px;
     border-radius: 5px;
-    height: 35px;
-    width: 155px;
+    height: 2.1875rem;
+    width: 9.6875rem;
     background-color: #ff8800;
     border: none;
     color: #fff;
@@ -173,7 +182,8 @@ input[type=text] {
 
 nav {
     margin-bottom: 4rem;
-    margin-left: 25rem;
+    margin-left: 5rem;
+    width: 100%;
 }
 nav ul {
     float: left;   
@@ -189,15 +199,15 @@ nav ul li {
 nav ul li a {
     display: block;
     font-size: 14px;
-    padding: 22px 115px 22px 14px;
+    padding: 1.375rem 7.1875rem 1.375rem 0.875rem;
     text-decoration: none;    
 }
 
 nav ul li ul {
     display:none;
     position: relative;   
-    padding: 10px;
-    border-radius: 0 0 5px 5px;
+    padding: 0.625rem;
+    border-radius: 0 0 0.3125rem 0.3125rem;
     position: absolute;
 }
 
@@ -206,26 +216,25 @@ nav ul li:hover ul {
 }
 
 nav ul li ul li {
-    width: 180px;
+    width: 11.25rem;
     border-radius: 4px;    
 }
 
 nav ul li ul li a {
-    padding: 12px 14px;
+    padding: 0.75rem 0.875rem;
     background:#fff;    
-    margin-top: -15px;
-    border-radius: 0 0 5px 5px;   
+    margin-top: -0.9375rem;
+    border-radius: 0 0 0.3125rem 0.3125rem;   
 }
-
 
 /*Banner*/
 
 .banner {
     background: rgb(233, 70, 5);
-    width:100%;
+    width: 100%;
     text-align: center;
     color:#fff;
-    margin-top: 2rem;
+    margin: auto;
 }
 
 .titulo-desc {
@@ -240,17 +249,17 @@ nav ul li ul li a {
     font-weight:bolder;
     font-size: 14px;
     margin-bottom: 2rem;
-    height: 48px;
-    line-height: 17px;
-    min-width: 256px;
-    padding: 14px 20px;
+    height: 3rem;
+    line-height: 1.0625rem;
+    min-width: 16rem;
+    padding: 0.875rem 1.25rem;
     text-transform: uppercase;
     color: #212529;
     cursor: pointer;
 }
 
 .btn-banner:hover {
-    min-width: 265px;  
+    min-width: 16.5625rem;  
     opacity: 0.6;
 }
 
@@ -263,23 +272,22 @@ nav ul li ul li a {
     background: rgba(208,56,1,.7);  
     font-weight:bolder;
     font-size: 18px;
-    line-height: 35px;  
+    line-height: 2.1875rem;  
     position: relative;
     display: grid;
     position: relative;  
     float: right;    
-    margin: -15rem 30rem 0 auto;
+    margin: -13rem 10rem 0 auto;
 }
 
 /*Serviços*/
 
 .servicos {
     display: flex;
-    margin: 10px 250px;
+    margin: 0.625rem 15.625rem;
     justify-content: space-evenly;
     align-items: center;
 }
-
 
 .servicos p {
     justify-content: end;
@@ -315,9 +323,9 @@ nav ul li ul li a {
 .card {   
     border: 1px solid rgba(0,0,0,.1);
     border-radius: 4px;
-    margin: 1rem 8px;
-    max-width: 220px;
-    padding: 5px;
+    margin: 1rem 0.5rem;
+    max-width: 13.75rem;
+    padding: 0.3125rem;
     text-align: center;
     width: 100%;
     display: grid;    
@@ -369,7 +377,7 @@ nav ul li ul li a {
     color:#212529;
     display: flex;
     justify-content:center;
-    align-items: center;
+    align-items: center;    
 }
 
 .metodos p {
@@ -383,29 +391,28 @@ nav ul li ul li a {
     display: grid;
     grid-template-columns: auto auto auto auto;
     align-items: center;
-    margin: 10px 350px;
+    margin: 4rem 1rem;
+    width: 100%;
 }
 
 .grid-icone {
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
-    margin-right: 10px;
-    height: 150px;
+    margin-right: 0.625rem;
+    height: 9.375rem;
 }
 
 .icone-metodos {   
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70px;
-    height: 70px;
+    width: 4.375rem;
+    height: 4.375rem;
     border-radius: 50px;
     background-color: #f1681e;    
     float: left;
-    margin-right: 15px;
-    margin-left: 15px;
-    margin-bottom: 0px;
+    margin: 0 0.9375rem;    
 }
 
 .txt-metodos {
@@ -423,8 +430,8 @@ nav ul li ul li a {
     border-radius: 4px;
     font-size: 13px;
     font-weight: 600;
-    height: 34px;
-    padding: 0 12px;
+    height: 2.125rem;
+    padding: 0 0.75rem;
     align-items: center;
     text-align: center;
     cursor: pointer;
@@ -447,7 +454,7 @@ nav ul li ul li a {
     border-top: 4px solid #23be87;
     width: 100%;
     height: 100%;
-    padding: 15px;
+    padding: 0.9375rem;
 }
 
 .concursos-abertos h2{
@@ -461,12 +468,17 @@ nav ul li ul li a {
 .aprovados{
     display: flex;
     justify-content: space-between;
-    margin: auto 350px;
-    
-}    
+    margin: auto;
+    width: 100%;    
+}  
+
+.aprovados h2 {
+    margin-left: 12rem;
+}
 
 .link-historias {
     color: #35abfc;    
+    margin-right: 12rem;
 }
 
 .link-historias:hover {
@@ -474,7 +486,7 @@ nav ul li ul li a {
 }
 
 .cards-aprovados {
-    margin: 0px 350px;
+    margin: 0 10rem;
     display: flex;
     justify-content: center;
     padding-bottom: 1rem;
@@ -484,9 +496,9 @@ nav ul li ul li a {
     display: grid;
     grid-template-columns: auto auto;
     background-color: #eaf4f7;
-    margin: 15px 15px 0px 0px;
+    margin: 0.9375rem 0.9375rem 0 0;
     border-radius: 5px;
-    height: 180px;
+    height: 11.25rem;
 }
 
 .txt-aprovados {
@@ -496,20 +508,20 @@ nav ul li ul li a {
 .img-dep {
     display: flex;
     align-items: center;
-    margin: 0px 20px;
+    margin: 0 1.25rem;
 }
 
 .btn-conquiste {
     display: flex;
-    margin: 20px auto 0;
+    margin: 1.25rem auto 0;
     background: #35abfc;
     color: #fff;
     border: none;
     border-radius: 4px;
     font-size: 13px;
     font-weight: 600;
-    height: 34px;
-    padding: 0 12px;
+    height: 2.125rem;
+    padding: 0 0.75rem;
     align-items: center;
     text-align: center;
     cursor: pointer;
@@ -520,11 +532,13 @@ nav ul li ul li a {
 }
 
 .conquista a {
-    margin-left: 40%;  
-    margin-top: 20rem;  
+    display: flex;
+    width: 100%;  
+    margin-top: 4rem;  
     padding: 0;
     color: #35abfc;   
     text-decoration: none;
+    justify-content: center;
 }
 
 .conquista a:hover {
@@ -542,6 +556,7 @@ nav ul li ul li a {
     margin-right: auto;
     margin-top: 5rem;     
     color:#212529;
+    cursor: pointer;
 }
 
 .guias p {
@@ -570,22 +585,20 @@ nav ul li ul li a {
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
-    margin-right: 10px;
-    height: 200px;
+    margin-right: 0.625rem;
+    height: 12.5rem;
 }
 
 .icone-guias {   
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70px;
-    height: 70px;
-    border-radius: 50px;
+    width: 4.375rem;
+    height: 4.735rem;
+    border-radius: 3.125rem;
     background-color: #f1681e;
     float: left;
-    margin-right: 15px;
-    margin-left: 15px;
-    margin-bottom: 0px;
+    margin: 0 0.9375rem;    
 }
 
 .txt-guias {
@@ -605,38 +618,36 @@ nav ul li ul li a {
 .noticias h3 {
     display: inline-block;
     text-align: left;
-    margin-top: 1rem;
-    margin-right: 2rem;
-    margin-bottom: 3rem;
-    padding: 0;   
+    margin: auto;    
+    padding: 0.5rem;   
     font-size: 1rem;
     max-width: 10rem;
     max-height: 10rem;
     font-size: 14px;
-    color: #495057
+    color: #495057;
 }
 
 .noticias h3:hover {
     color:#00b1ff
 }
+
 .noticias {
     display: grid;
     grid-template-columns: repeat(3, auto);
     justify-content: center;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;     
     padding-left: 20%;
     padding-right: 20%;
     color:#212529;
     cursor: pointer;  
+    width: 100%;
 }
 
 .img-noticias {
-    height:100px;
-    top: 55%;
-    width: 110px;
-    display:inline-block    
+    height: 6.25rem;
+    width: 6.875rem;      
+    display:inline-block;      
 }
 
 .mais-noticias a {    
@@ -645,6 +656,11 @@ nav ul li ul li a {
     text-decoration: none;  
     display: flex; 
     justify-content:center;
+    margin-top: 4rem;
+}
+
+.mais-noticias a:hover {
+    text-decoration: underline;    
 }
 
 /*Rodapé*/
@@ -652,6 +668,7 @@ nav ul li ul li a {
 footer {
     background-color: #495057; 
     margin-top: 4rem;
+    width: 100%;
     
 }
 
@@ -685,7 +702,7 @@ footer {
 .secao-termos .termos li{
     color: #fff;  
     display: inline-block;
-    padding: 15px 0;
+    padding: 0.9375rem 0;
     text-align: left;     
 }
 
