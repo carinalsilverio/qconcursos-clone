@@ -22,7 +22,7 @@
     /*Banner*/
     .banner {
         width: 100%;  
-        height: 25rem;      
+        height: 38rem;      
     }
 
     .btn-banner {
@@ -30,8 +30,9 @@
     }
 
     .desconto {
-        margin: -17rem 18rem 10rem auto;
+        display: block;       
         align-items: center;
+        justify-content: center;
         height: auto;
         padding: 0;
     }
@@ -102,19 +103,85 @@
 
 }
 
-@media only screen and (min-width: 788px) and (max-width: 979px) {
-    
+@media only screen and (min-width: 789px) and (max-width: 979px) {
+    /*Cabeçalho*/
+    header {
+        height: 200px;
+        justify-content: center;
+    }
+
+    /*Barra de Navegação*/
+	nav {        
+        flex-direction: row;
+        justify-content:space-around;
+    }
+    nav ul {
+        flex-direction: row;
+        width:70%;
+    }
+
+    /*Banner*/
+    .banner {
+        width: 100%;  
+        height: 25rem;      
+    }
+
+    .btn-banner {
+        margin-top: 10rem;
+    }
+
+    .desconto {
+        margin: -17rem 18rem 10rem auto;
+        align-items: center;
+        height: auto;
+        padding: 0;
+    }
+
+    /*Serviços*/
+    .servicos {
+        display: inline-flex;
+        justify-content:start;
+        margin-inline-start: auto;
+        margin-left: 4rem;
+        width: 100%;       
+    }            
+    .servicos h2, p {
+        margin-right: 2rem;
+    }
+
+    .btn-assinatura {
+        display: block;        
+    }
+
+    /*Objetivos*/
+    .areas {
+        display:grid;
+        grid-template-columns: repeat(3, auto);
+        justify-content: start;
+        align-items: center;
+    }
+
+    /*Métodos de estudos*/
+    .metodos-estudos h2 {
+        justify-content: center;
+        margin: auto;
+    }
+    .metodos {
+        grid-template-columns:repeat(2
+        , auto);
+        max-width: 40rem;        
+    }
 }
 
 
-@media only screen and (max-width: 999px) {
+@media only screen (min-width: 980) and (max-width: 1400px) {
 
     body {
         overflow-x: hidden;
     }
 
     .lista-nav {
-        
+        position: relative;
         top: 8vh;
         right: 0;
         width: 30vw;
